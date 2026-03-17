@@ -87,3 +87,43 @@ def definirTopStudent(dados):
             topStudent.append(cada)
 
     return topStudent
+
+
+def gerarRelatorio(alunosRetirados, alunosComStatus, alunosDeRecuperacao, topStudent):
+    print("Gerando relatório...")
+
+    with open("sistema/relatorio.txt", "w", encoding="utf-8") as arquivo:
+        arquivo.write(
+            "Relatório de desempenho acadêmico do SENAI\n\n"
+        )
+
+        arquivo.write(f"- Alunos que estão de recuperação (Média < 7.0): \n")
+        for cada in alunosDeRecuperacao:
+            arquivo.write(
+                f"    | Nome do aluno: {cada[0]} - Notas: {cada[1]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
+            )
+        arquivo.write(f"* Quantidade de alunos({len(alunosDeRecuperacao)}) *\n\n")
+
+        arquivo.write("- Alunos que estão de situação normal (Média >= 7.0): \n")
+        count = 0
+        for cada in alunosComStatus:
+            if cada[3] == "Situação Normal":
+                arquivo.write(
+                    f"    | Nome do aluno: {cada[0]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
+                )
+                count += 1
+        arquivo.write(f"* Quantidade de alunos({count}) *\n\n")
+
+        arquivo.write("- Top Student (Maior média registrada): \n")
+        for cada in topStudent:
+            arquivo.write(
+                f"    | Nome do aluno: {cada[0]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
+            )
+        arquivo.write(f"* Quantidade de alunos({len(topStudent)}) *\n\n")
+
+        arquivo.write(
+            "- Alunos que precisam de revisão de nota (sao aceitos valores inteiros ou decimais): \n"
+        )
+        for cada in alunosRetirados:
+            arquivo.write(f"    | Nome do aluno: {cada[0]} - Notas: {cada[1]}\n")
+        arquivo.write(f"* Quantidade de alunos({len(alunosRetirados)}) *\n")
