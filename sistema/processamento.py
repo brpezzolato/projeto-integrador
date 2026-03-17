@@ -1,16 +1,19 @@
 def limpezaDosDados(dados):
-    print("Limpando os dados...")
+    print("\nLimpando os dados...")
 
     alunosParaMedia = []
     alunosRetirados = []
 
     for cada in dados:
+        dadosValidos = True
+
         for cadaNota in cada[1]:
-            print(type(cadaNota))
-            if type(cadaNota) != float or type(cadaNota) != int:
-                alunosRetirados.append(cada)
-                break
-            else:
-                alunosParaMedia.append(cada)
+            if type(cadaNota) != float and type(cadaNota) != int:
+                dadosValidos = False
+        
+        if dadosValidos == True:
+            alunosParaMedia.append(cada)
+        else:
+            alunosRetirados.append(cada)
 
     return alunosParaMedia, alunosRetirados
