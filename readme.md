@@ -15,7 +15,7 @@ Projeto de automação de acompanhamento academico SENAI.
 
 ### Requisitos não funcionais (RNF):
 - Automação de processos manuais;
-- Desempenho rápido e preciso;
+- Desempenho rápido;
 - Modularização do código;
 - Tratamento de dados;
 - Tratamento de erros;
@@ -24,7 +24,7 @@ Projeto de automação de acompanhamento academico SENAI.
 
 ### Regras de negócio:
 - O programa deve calcular a média de acordo com as notas do aluno;
-- O aluno que obter média menos do que 7.0 é colocado status de “Recuperação”;
+- O aluno que obter média menor do que 7.0 é colocado status de “Recuperação”;
 - Destacar o aluno com a maior média colocando o status de “Top Student”;
 - A quantidade de nota dos alunos pode variar de um para outro;
 - O programa deve ignorar o aluno com notas inválidas e retornar o nome para revisão das notas.
