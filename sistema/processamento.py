@@ -100,7 +100,7 @@ def gerarRelatorio(alunosRetirados, alunosComStatus, alunosDeRecuperacao, topStu
         arquivo.write(f"- Alunos que estão de recuperação (Média < 7.0): \n")
         for cada in alunosDeRecuperacao:
             arquivo.write(
-                f"    Nome do aluno: {cada[0]} - Notas: {cada[1]} - Média: {cada[2]} - Situação: {cada[3]}\n"
+                f"    Nome do aluno: {cada[0]} - Notas: {cada[1]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
             )
         arquivo.write(f"\n* Quantidade de alunos({len(alunosDeRecuperacao)}) *\n")
 
@@ -111,7 +111,7 @@ def gerarRelatorio(alunosRetirados, alunosComStatus, alunosDeRecuperacao, topStu
         for cada in alunosComStatus:
             if cada[3] == "Situação Normal":
                 arquivo.write(
-                    f"    Nome do aluno: {cada[0]} - Média: {cada[2]} - Situação: {cada[3]}\n"
+                    f"    Nome do aluno: {cada[0]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
                 )
                 count += 1
         arquivo.write(f"\n* Quantidade de alunos({count}) *\n")
@@ -121,7 +121,7 @@ def gerarRelatorio(alunosRetirados, alunosComStatus, alunosDeRecuperacao, topStu
         arquivo.write("- Top Student (Maior média registrada): \n")
         for cada in topStudent:
             arquivo.write(
-                f"    Nome do aluno: {cada[0]} - Média: {cada[2]} - Situação: {cada[3]}\n"
+                f"    Nome do aluno: {cada[0]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
             )
         arquivo.write(f"\n* Quantidade de alunos({len(topStudent)}) *\n")
 

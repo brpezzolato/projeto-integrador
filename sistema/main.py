@@ -10,7 +10,7 @@ dados = [
     ("São Marcos", [1, 10, "10", ""]),
     ("Bruno Pezzolato2", [10, 9, 8, 1, 2]),
     ("Bruno Pezzolato3", [10, 9, 7]),
-    ("Joana Azevedo", []),
+    ("Minha Princesa (Ana Lério)", []),
 ]
 
 dadosParaMedia, alunosRetirados = funcao.limpezaDosDados(dados)
