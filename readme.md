@@ -29,3 +29,12 @@ Projeto de automação de acompanhamento academico SENAI.
 - Destacar o aluno com a maior média colocando o status de “Top Student”;
 - A quantidade de nota dos alunos pode variar de um para outro;
 - O programa deve ignorar o aluno com notas inválidas e retornar o nome para revisão das notas.
+
+## Link do KanBan (Trello)
+[Trello](https://trello.com/b/lCj9IxHq)
+![Alt](kanban/kanban.png)
+![Alt](kanban/kanban2.png)
+![Alt](kanban/kanban3.png)
+
+## Link do mapa de empatia (Miro)
+[Trello](https://miro.com/app/board/uXjVGww-9fM=/?share_link_id=696589079850)
