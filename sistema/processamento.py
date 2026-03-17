@@ -75,3 +75,15 @@ def alunosRecuperacao(dados):
             alunosEmRecuperacao.append(cada)
 
     return alunosEmRecuperacao
+
+
+def topStudent(dados):
+    print("Definindo o Top Student...")
+
+    topStudent = []
+
+    for cada in dados:
+        if cada[3] == "Top Student":
+            topStudent.append(cada)
+
+    return topStudent
