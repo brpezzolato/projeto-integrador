@@ -37,3 +37,6 @@ Projeto de automação de acompanhamento academico SENAI.
 ![Alt](kanban/kanban3.png)
 
 ## [Link do mapa de empatia (Miro)](https://miro.com/app/board/uXjVGww-9fM=/?share_link_id=696589079850)
+
+![Alt](mapaDeEmpatia/mapadaempatia.png)
+![Alt](mapaDeEmpatia/mapadaempatia2.png)
