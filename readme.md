@@ -31,10 +31,11 @@ Projeto de automação de acompanhamento academico SENAI.
 - O programa deve ignorar o aluno com notas inválidas e retornar o nome para revisão das notas.
 
 ## Link do KanBan (Trello)
-[Trello](https://trello.com/b/lCj9IxHq)
+### [Trello](https://trello.com/b/lCj9IxHq)
+
 ![Alt](kanban/kanban.png)
 ![Alt](kanban/kanban2.png)
 ![Alt](kanban/kanban3.png)
 
 ## Link do mapa de empatia (Miro)
-[Trello](https://miro.com/app/board/uXjVGww-9fM=/?share_link_id=696589079850)
+### [Miro](https://miro.com/app/board/uXjVGww-9fM=/?share_link_id=696589079850)
