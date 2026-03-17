@@ -13,3 +13,4 @@ dados = [
 dadosParaMedia, alunosRetirados = funcao.limpezaDosDados(dados)
 dadosComMedia = funcao.calculoMedia(dadosParaMedia)
 alunosComStatus = funcao.atribuirStatus(dadosComMedia)
+alunosDeRecuperacao = funcao.alunosRecuperacao(alunosComStatus)

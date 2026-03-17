@@ -63,3 +63,15 @@ def atribuirStatus(dados):
             alunosComStatus.append(novoObjto)
 
     return alunosComStatus
+
+
+def alunosRecuperacao(dados):
+    print("Filtrando alunos de recuperação...")
+
+    alunosEmRecuperacao = []
+
+    for cada in dados:
+        if cada[2] < 7.0:
+            alunosEmRecuperacao.append(cada)
+
+    return alunosEmRecuperacao
