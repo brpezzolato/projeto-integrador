@@ -20,3 +20,21 @@ def limpezaDosDados(dados):
             alunosRetirados.append(cada)
 
     return alunosParaMedia, alunosRetirados
+
+
+def calculoMedia(dados):
+    print("Calculando média dos alunos...")
+
+    dadosComMedia = []
+
+    for cada in dados:
+        soma = 0
+
+        for cadaNota in cada[1]:
+            soma += cadaNota
+
+        media = soma / len(cada[1])
+        novoObjto = (cada[0], cada[1], media)
+        dadosComMedia.append(novoObjto)
+
+    return dadosComMedia

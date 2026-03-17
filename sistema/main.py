@@ -6,7 +6,8 @@ dados = [
     ("Bruno Pezzolato", [1, 10, "10", ""]),
     ("Ana Lério", [9, 10, 8]),
     ("São Marcos", [1, 10, "10", ""]),
-    ("Bruno Pezzolato2", []),
+    ("Bruno Pezzolato2", [10, 9, 8, 1, 2]),
 ]
 
 dadosParaMedia, alunosRetirados = funcao.limpezaDosDados(dados)
+dadosComMedia = funcao.calculoMedia(dadosParaMedia)
