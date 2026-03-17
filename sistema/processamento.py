@@ -77,7 +77,7 @@ def alunosRecuperacao(dados):
     return alunosEmRecuperacao
 
 
-def topStudent(dados):
+def definirTopStudent(dados):
     print("Definindo o Top Student...")
 
     topStudent = []
