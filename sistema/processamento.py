@@ -94,42 +94,36 @@ def gerarRelatorio(alunosRetirados, alunosComStatus, alunosDeRecuperacao, topStu
 
     with open("sistema/relatorio.txt", "w", encoding="utf-8") as arquivo:
         arquivo.write(
-            "Relatório de desempenho acadêmico do SENAI\n\n" + "-" * 100 + "\n\n"
+            "Relatório de desempenho acadêmico do SENAI\n\n"
         )
 
         arquivo.write(f"- Alunos que estão de recuperação (Média < 7.0): \n")
         for cada in alunosDeRecuperacao:
             arquivo.write(
-                f"    Nome do aluno: {cada[0]} - Notas: {cada[1]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
+                f"    | Nome do aluno: {cada[0]} - Notas: {cada[1]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
             )
-        arquivo.write(f"\n* Quantidade de alunos({len(alunosDeRecuperacao)}) *\n")
-
-        arquivo.write("\n" + "-" * 100 + "\n\n")
+        arquivo.write(f"* Quantidade de alunos({len(alunosDeRecuperacao)}) *\n\n")
 
         arquivo.write("- Alunos que estão de situação normal (Média >= 7.0): \n")
         count = 0
         for cada in alunosComStatus:
             if cada[3] == "Situação Normal":
                 arquivo.write(
-                    f"    Nome do aluno: {cada[0]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
+                    f"    | Nome do aluno: {cada[0]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
                 )
                 count += 1
-        arquivo.write(f"\n* Quantidade de alunos({count}) *\n")
-
-        arquivo.write("\n" + "-" * 100 + "\n\n")
+        arquivo.write(f"* Quantidade de alunos({count}) *\n\n")
 
         arquivo.write("- Top Student (Maior média registrada): \n")
         for cada in topStudent:
             arquivo.write(
-                f"    Nome do aluno: {cada[0]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
+                f"    | Nome do aluno: {cada[0]} - Média: {cada[2]:.2f} - Situação: {cada[3]}\n"
             )
-        arquivo.write(f"\n* Quantidade de alunos({len(topStudent)}) *\n")
-
-        arquivo.write("\n" + "-" * 100 + "\n\n")
+        arquivo.write(f"* Quantidade de alunos({len(topStudent)}) *\n\n")
 
         arquivo.write(
             "- Alunos que precisam de revisão de nota (sao aceitos valores inteiros ou decimais): \n"
         )
         for cada in alunosRetirados:
-            arquivo.write(f"    Nome do aluno: {cada[0]} - Notas: {cada[1]}\n")
-        arquivo.write(f"\n* Quantidade de alunos({len(alunosRetirados)}) *\n")
+            arquivo.write(f"    | Nome do aluno: {cada[0]} - Notas: {cada[1]}\n")
+        arquivo.write(f"* Quantidade de alunos({len(alunosRetirados)}) *\n")
