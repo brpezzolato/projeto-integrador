@@ -7,20 +7,21 @@ Projeto de automação de acompanhamento academico SENAI.
 ### Requisitos Funcionais (RF):
 - Lista de tuplas formatada com o nome do aluno e lista contendo suas notas com número de notas variável exemplo: [("Nome", [notas])];
 - Validação de formato e integridade das notas dos alunos;
-- Cálculo de média do aluno;
-- Identificar status do aluno conforme a média;
-- Filtro de identificação de alunos que estão com status de recuperação ou o aluno com a maior média (Top Student); 
+- O sistema deve calcular a média das notas de cada aluno;
+- Identificar status do aluno conforme o cálculo de sua média;
+- Filtrar os alunos que estão com status de recuperação;
+- Filtrar o aluno com a maior média de todas (Top Student); 
 - Destaque dos estudantes de recuperação e com melhores médias;
 - Geração de arquivo .txt contendo informações sobre o processamento de dados entregando um relatório completo e automático.
 
 ### Requisitos não funcionais (RNF):
 - Automação de processos manuais;
-- Desempenho rápido;
-- Modularização do código;
+- Desempenho rápido e preciso;
+- Modularização do código separando a execução principal e o processamento de dados;
 - Tratamento de dados;
 - Tratamento de erros;
-- Confiabilidade;
-- Precisão.
+- Confiabilidade no processamento sem perda de dados;
+- Precisão no cálculo da média.
 
 ### Regras de negócio:
 - O programa deve calcular a média de acordo com as notas do aluno;
